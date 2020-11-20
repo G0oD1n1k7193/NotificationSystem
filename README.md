@@ -24,4 +24,5 @@ Main.getInstance().notificationManager.addNotification(NotificationType.INFO, ("
 
 ## Done!
 -Demo:
-<p align="center"><img src="https://ibb.co/NT49BZN"></p>
+<p align="center"><img src="https://i.ibb.co/NT49BZN/image-2020-11-21-024909.png"></p>
+

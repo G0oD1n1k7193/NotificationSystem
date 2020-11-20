@@ -71,10 +71,10 @@ public class Notification {
 		
 		int color;
 		if (type == NotificationType.INFO)			color = new Color(41, 46, 52, 220).getRGB();
-        else if (type == NotificationType.WARNING) 	color = new Color(248, 252, 0, 255).getRGB();
-        else										color = new Color(255, 0, 0, 255).getRGB();
+		else if (type == NotificationType.WARNING) 	color = new Color(248, 252, 0, 255).getRGB();
+		else										color = new Color(255, 0, 0, 255).getRGB();
 
-        glPushMatrix();
+		glPushMatrix();
 		drawRect(GL_LINE_LOOP, finishedX, finishedY, (finishedX + this.width), (finishedY + 16.0f), color);
 		drawRect(GL_QUADS, finishedX, finishedY, (finishedX + this.width), (finishedY + 16.0f), new Color(51, 56, 62, 200).brighter().getRGB());
 		drawRect(GL_QUADS, finishedX + 0.5, finishedY + 0.5, (double)(finishedX + 3.0f), finishedY + 15.5, color);

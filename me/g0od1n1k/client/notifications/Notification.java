@@ -70,9 +70,11 @@ public class Notification {
 		final double finishedY = this.oldY + (this.y - this.oldY);
 		
 		int color;
-		if (type == NotificationType.INFO)			color = new Color(41, 46, 52, 220).getRGB();
-		else if (type == NotificationType.WARNING) 	color = new Color(248, 252, 0, 255).getRGB();
-		else										color = new Color(255, 0, 0, 255).getRGB();
+		switch (type) {
+		case INFO: color = new Color(41, 46, 52, 220).getRGB(); break;
+		case WARNING: color = new Color(248, 252, 0, 255).getRGB(); break;
+		default: color = new Color(255, 0, 0, 255).getRGB(); break;
+		}								
 
 		glPushMatrix();
 		drawRect(GL_LINE_LOOP, finishedX, finishedY, (finishedX + this.width), (finishedY + 16.0f), color);
